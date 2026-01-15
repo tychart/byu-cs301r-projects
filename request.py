@@ -34,12 +34,29 @@ def main():
         client = ollama_client()
 
 
+    input_text = f"""
+Please output detailed and exact ascii art in the shape of a bird:
 
+
+"""
+    
+    file_path = 'test_onlyalpahanum.txt'
+
+    with open(file_path, 'r') as file:
+        file_content = file.read()
+
+
+# #     input_text = f"""
+# # Please take the following text as input, and output what you think the purpose of the text document is:
+
+# # {file_content}
+
+# """
     
     
     response = client.responses.create(
         model=model,
-        input="Given the following list, can you please classify the following cities by if they are over or under 100,000 people?\n\nList: ['New York', 'Los Angeles', 'Chicago', 'Houston', 'Phoenix', 'Philadelphia', 'San Antonio', 'San Diego', 'Dallas', 'San Jose']\n\nOutput: Over 100,",
+        input=input_text,
         reasoning={'effort': 'low'}
     )
 

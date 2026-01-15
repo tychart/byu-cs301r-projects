@@ -1,0 +1,1473 @@
+{
+  "name": "root",
+  "type": "directory",
+  "children": [
+    {
+      "name": ".venv",
+      "type": "directory",
+      "children": [
+        {
+          "name": "tychart@ubudesk(ubu25.10) ~/projects/byu-cs301r-projects $",
+          "type": "file",
+          "children": []
+        }
+      ]
+    },
+    {
+      "name": "..",
+      "type": "directory",
+      "children": []
+    },
+    {
+      "name": "byu-cs301r-projects",
+      "type": "directory",
+      "children": [
+        {
+          "name": "__pycache__",
+          "type": "directory",
+          "children": [
+            {
+              "name": "usage.cpython-313.pyc",
+              "type": "file",
+              "children": []
+            }
+          ]
+        },
+        {
+          "name": "request.py",
+          "type": "file",
+          "children": []
+        },
+        {
+          "name": "requirements.txt",
+          "type": "file",
+          "children": []
+        },
+        {
+          "name": "test_nospace.txt",
+          "type": "file",
+          "children": []
+        },
+        {
+          "name": "test_onlyalpahanum.txt",
+          "type": "file",
+          "children": []
+        },
+        {
+          "name": "test.txt",
+          "type": "file",
+          "children": []
+        },
+        {
+          "name": "tmp.json",
+          "type": "file",
+          "children": []
+        },
+        {
+          "name": "usage.py",
+          "type": "file",
+          "children": []
+        }
+      ]
+    },
+    {
+      "name": "byu-cs324-projects",
+      "type": "directory",
+      "children": [
+        {
+          "name": "01a-hw-private-repo-mirror",
+          "type": "directory",
+          "children": [
+            {
+              "name": "README.md",
+              "type": "file",
+              "children": []
+            }
+          ]
+        },
+        {
+          "name": "01b-hw-manhunt",
+          "type": "directory",
+          "children": [
+            {
+              "name": "README.md",
+              "type": "file",
+              "children": []
+            }
+          ]
+        },
+        {
+          "name": "01c-hw-strings-io-env",
+          "type": "directory",
+          "children": [
+            {
+              "name": "exercises",
+              "type": "directory",
+              "children": []
+            },
+            {
+              "name": "exercises.c",
+              "type": "file",
+              "children": []
+            },
+            {
+              "name": "README.md",
+              "type": "file",
+              "children": []
+            },
+            {
+              "name": "test.txt",
+              "type": "file",
+              "children": []
+            }
+          ]
+        },
+        {
+          "name": "02-hw-byu-bandit",
+          "type": "directory",
+          "children": [
+            {
+              "name": "README.md",
+              "type": "file",
+              "children": []
+            },
+            {
+              "name": "SshTester.py",
+              "type": "file",
+              "children": []
+            }
+          ]
+        },
+        {
+          "name": "03a-hw-remote",
+          "type": "directory",
+          "children": [
+            {
+              "name": "hello.c",
+              "type": "file",
+              "children": []
+            },
+            {
+              "name": "README.md",
+              "type": "file",
+              "children": []
+            }
+          ]
+        },
+        {
+          "name": "03b-hw-fork-exec",
+          "type": "directory",
+          "children": [
+            {
+              "name": "exec.c",
+              "type": "file",
+              "children": []
+            },
+            {
+              "name": "fork.c",
+              "type": "file",
+              "children": []
+            },
+            {
+              "name": "Makefile",
+              "type": "file",
+              "children": []
+            },
+            {
+              "name": "README.md",
+              "type": "file",
+              "children": []
+            }
+          ]
+        },
+        {
+          "name": "03b-hw-mem-strings",
+          "type": "directory",
+          "children": [
+            {
+              "name": "README.md",
+              "type": "file",
+              "children": []
+            }
+          ]
+        },
+        {
+          "name": "03c-hw-fork-exec",
+          "type": "directory",
+          "children": [
+            {
+              "name": "exec.c",
+              "type": "file",
+              "children": []
+            },
+            {
+              "name": "fork.c",
+              "type": "file",
+              "children": []
+            },
+            {
+              "name": "Makefile",
+              "type": "file",
+              "children": []
+            },
+            {
+              "name": "README.md",
+              "type": "file",
+              "children": []
+            }
+          ]
+        },
+        {
+          "name": "04-lab-shell-pipeline",
+          "type": "directory",
+          "children": [
+            {
+              "name": "checktsh.pl",
+              "type": "file",
+              "children": []
+            },
+            {
+              "name": "Makefile",
+              "type": "file",
+              "children": []
+            },
+            {
+              "name": "mycat.c",
+              "type": "file",
+              "children": []
+            },
+            {
+              "name": "mygrep.c",
+              "type": "file",
+              "children": []
+            },
+            {
+              "name": "myintgroup.c",
+              "type": "file",
+              "children": []
+            },
+            {
+              "name": "myppid.c",
+              "type": "file",
+              "children": []
+            },
+            {
+              "name": "myspin.c",
+              "type": "file",
+              "children": []
+            },
+            {
+              "name": "pipeline-2cmds.png",
+              "type": "file",
+              "children": []
+            },
+            {
+              "name": "pipeline-2cmds.svg",
+              "type": "file",
+              "children": []
+            },
+            {
+              "name": "pipeline.png",
+              "type": "file",
+              "children": []
+            },
+            {
+              "name": "pipeline.svg",
+              "type": "file",
+              "children": []
+            },
+            {
+              "name": "README.md",
+              "type": "file",
+              "children": []
+            },
+            {
+              "name": "redirection.png",
+              "type": "file",
+              "children": []
+            },
+            {
+              "name": "redirection.svg",
+              "type": "file",
+              "children": []
+            },
+            {
+              "name": "sdriver.pl",
+              "type": "file",
+              "children": []
+            },
+            {
+              "name": "trace01.txt",
+              "type": "file",
+              "children": []
+            },
+            {
+              "name": "trace02.txt",
+              "type": "file",
+              "children": []
+            },
+            {
+              "name": "trace03.txt",
+              "type": "file",
+              "children": []
+            },
+            {
+              "name": "trace34.txt",
+              "type": "file",
+              "children": []
+            },
+            {
+              "name": "trace35.txt",
+              "type": "file",
+              "children": []
+            },
+            {
+              "name": "trace36.txt",
+              "type": "file",
+              "children": []
+            },
+            {
+              "name": "trace37.txt",
+              "type": "file",
+              "children": []
+            },
+            {
+              "name": "trace38.txt",
+              "type": "file",
+              "children": []
+            },
+            {
+              "name": "trace39.txt",
+              "type": "file",
+              "children": []
+            },
+            {
+              "name": "trace40.txt",
+              "type": "file",
+              "children": []
+            },
+            {
+              "name": "trace41.txt",
+              "type": "file",
+              "children": []
+            },
+            {
+              "name": "trace42.txt",
+              "type": "file",
+              "children": []
+            },
+            {
+              "name": "tsh.c",
+              "type": "file",
+              "children": []
+            },
+            {
+              "name": "tshref",
+              "type": "directory",
+              "children": []
+            }
+          ]
+        },
+        {
+          "name": "05-hw-signals",
+          "type": "directory",
+          "children": [
+            {
+              "name": "driver.py",
+              "type": "file",
+              "children": []
+            },
+            {
+              "name": "killer.c",
+              "type": "file",
+              "children": []
+            },
+            {
+              "name": "Makefile",
+              "type": "file",
+              "children": []
+            },
+            {
+              "name": "README.md",
+              "type": "file",
+              "children": []
+            },
+            {
+              "name": "signals.c",
+              "type": "file",
+              "children": []
+            }
+          ]
+        },
+        {
+          "name": "06-lab-shell-signals",
+          "type": "directory",
+          "children": [
+            {
+              "name": "checktsh.pl",
+              "type": "file",
+              "children": []
+            },
+            {
+              "name": "Makefile",
+              "type": "file",
+              "children": []
+            },
+            {
+              "name": "myint.c",
+              "type": "file",
+              "children": []
+            },
+            {
+              "name": "myspin.c",
+              "type": "file",
+              "children": []
+            },
+            {
+              "name": "m split.c",
+              "type": "file",
+              "children": []
+            },
+            {
+              "name": "mystop.c",
+              "type": "file",
+              "children": []
+            },
+            {
+              "name": "README.md",
+              "type": "file",
+              "children": []
+            },
+            {
+              "name": "sdriver.pl",
+              "type": "file",
+              "children": []
+            },
+            {
+              "name": "trace01.txt",
+              "type": "file",
+              "children": []
+            },
+            {
+              "name": "trace02.txt",
+              "type": "file",
+              "children": []
+            },
+            {
+              "name": "trace03.txt",
+              "type": "file",
+              "children": []
+            },
+            {
+              "name": "trace04.txt",
+              "type": "file",
+              "children": []
+            },
+            {
+              "name": "trace05.txt",
+              "type": "file",
+              "children": []
+            },
+            {
+              "name": "trace06.txt",
+              "type": "file",
+              "children": []
+            },
+            {
+              "name": "trace07.txt",
+              "type": "file",
+              "children": []
+            },
+            {
+              "name": "trace08.txt",
+              "type": "file",
+              "children": []
+            },
+            {
+              "name": "trace09.txt",
+              "type": "file",
+              "children": []
+            },
+            {
+              "name": "trace10.txt",
+              "type": "file",
+              "children": []
+            },
+            {
+              "name": "trace11.txt",
+              "type": "file",
+              "children": []
+            },
+            {
+              "name": "trace12.txt",
+              "type": "file",
+              "children": []
+            },
+            {
+              "name": "trace13.txt",
+              "type": "file",
+              "children": []
+            },
+            {
+              "name": "trace14.txt",
+              "type": "file",
+              "children": []
+            },
+            {
+              "name": "trace15.txt",
+              "type": "file",
+              "children": []
+            },
+            {
+              "name": "trace16.txt",
+              "type": "file",
+              "children": []
+            },
+            {
+              "name": "tsh.c",
+              "type": "file",
+              "children": []
+            },
+            {
+              "name": "tshref",
+              "type": "directory",
+              "children": []
+            }
+          ]
+        },
+        {
+          "name": "07-hw-sockets",
+          "type": "directory",
+          "children": [
+            {
+              "name": "alpha.txt",
+              "type": "file",
+              "children": []
+            },
+            {
+              "name": "client.c",
+              "type": "file",
+              "children": []
+            },
+            {
+              "name": "http-bestill.txt",
+              "type": "file",
+              "children": []
+            },
+            {
+              "name": "http-socket.txt",
+              "type": "file",
+              "children": []
+            },
+            {
+              "name": "Makefile",
+              "type": "file",
+              "children": []
+            },
+            {
+              "name": "README.md",
+              "type": "file",
+              "children": []
+            },
+            {
+              "name": "server.c",
+              "type": "file",
+              "children": []
+            },
+            {
+              "name": "strip_http.py",
+              "type": "file",
+              "children": []
+            }
+          ]
+        },
+        {
+          "name": "08-lab-socket-hunt",
+          "type": "directory",
+          "children": [
+            {
+              "name": "driver.py",
+              "type": "file",
+              "children": []
+            },
+            {
+              "name": "Makefile",
+              "type": "file",
+              "children": []
+            },
+            {
+              "name": "README.md",
+              "type": "file",
+              "children": []
+            },
+            {
+              "name": "server_status.py",
+              "type": "file",
+              "children": []
+            },
+            {
+              "name": "treasure_hunter.c",
+              "type": "file",
+              "children": []
+            },
+            {
+              "name": "treasure_hunt.png",
+              "type": "file",
+              "children": []
+            },
+            {
+              "name": "treasure_hunt.svg",
+              "type": "file",
+              "children": []
+            }
+          ]
+        },
+        {
+          "name": "09a-hw-http",
+          "type": "directory",
+          "children": [
+            {
+              "name": "README.md",
+              "type": "file",
+              "children": []
+            },
+            {
+              "name": "www",
+              "type": "directory",
+              "children": []
+            }
+          ]
+        },
+        {
+          "name": "09b-hw-concurrency",
+          "type": "directory",
+          "children": [
+            {
+              "name": "echo.c",
+              "type": "file",
+              "children": []
+            },
+            {
+              "name": "echo_cnt.c",
+              "type": "file",
+              "children": []
+            },
+            {
+              "name": "echoserveri.c",
+              "type": "file",
+              "children": []
+            },
+            {
+              "name": "echoserverp.c",
+              "type": "file",
+              "children": []
+            },
+            {
+              "name": "echoservert.c",
+              "type": "file",
+              "children": []
+            },
+            {
+              "name": "echoservert_pre.c",
+              "type": "file",
+              "children": []
+            },
+            {
+              "name": "Makefile",
+              "type": "file",
+              "children": []
+            },
+            {
+              "name": "README.md",
+              "type": "file",
+              "children": []
+            }
+          ]
+        },
+        {
+          "name": "10-lab-proxy-threadpool",
+          "type": "directory",
+          "children": [
+            {
+              "name": "driver.py",
+              "type": "file",
+              "children": []
+            },
+            {
+              "name": "Makefile",
+              "type": "file",
+              "children": []
+            },
+            {
+              "name": "nop-server.py",
+              "type": "file",
+              "children": []
+            },
+            {
+              "name": "port-for-user.pl",
+              "type": "file",
+              "children": []
+            },
+            {
+              "name": "proxy.c",
+              "type": "file",
+              "children": []
+            },
+            {
+              "name": "README.md",
+              "type": "file",
+              "children": []
+            },
+            {
+              "name": "slow-client.py",
+              "type": "file",
+              "children": []
+            },
+            {
+              "name": "www",
+              "type": "directory",
+              "children": []
+            }
+          ]
+        },
+        {
+          "name": "11a-hw-openmp",
+          "type": "directory",
+          "children": [
+            {
+              "name": "mandelbrot.c",
+              "type": "file",
+              "children": []
+            },
+            {
+              "name": "policy.xml",
+              "type": "file",
+              "children": []
+            },
+            {
+              "name": "README.md",
+              "type": "file",
+              "children": []
+            }
+          ]
+        },
+        {
+          "name": "11b-hw-iomultiplex",
+          "type": "directory",
+          "children": [
+            {
+              "name": "echoservers.c",
+              "type": "file",
+              "children": []
+            },
+            {
+              "name": "Makefile",
+              "type": "file",
+              "children": []
+            },
+            {
+              "name": "README.md",
+              "type": "file",
+              "children": []
+            }
+          ]
+        },
+        {
+          "name": "12-lab-proxy-iomultiplex",
+          "type": "directory",
+          "children": [
+            {
+              "name": "driver.py",
+              "type": "file",
+              "children": []
+            },
+            {
+              "name": "Makefile",
+              "type": "file",
+              "children": []
+            },
+            {
+              "name": "nop-server.py",
+              "type": "file",
+              "children": []
+            },
+            {
+              "name": "port-for-user.pl",
+              "type": "file",
+              "children": []
+            },
+            {
+              "name": "proxy.c",
+              "type": "file",
+              "children": []
+            },
+            {
+              "name": "README.md",
+              "type": "file",
+              "children": []
+            },
+            {
+              "name": "slow-client.py",
+              "type": "file",
+              "children": []
+            },
+            {
+              "name": "www",
+              "type": "directory",
+              "children": []
+            }
+          ]
+        },
+        {
+          "name": "code",
+          "type": "directory",
+          "children": [
+            {
+              "name": "sbuf.c",
+              "type": "file",
+              "children": []
+            },
+            {
+              "name": "sockhelper.c",
+              "type": "file",
+              "children": []
+            }
+          ]
+        },
+        {
+          "name": "contrib",
+          "type": "directory",
+          "children": [
+            {
+              "name": "create-linux-vm",
+              "type": "file",
+              "children": []
+            },
+            {
+              "name": "vim-tutorial",
+              "type": "directory",
+              "children": []
+            },
+            {
+              "name": "vscode-debugger",
+              "type": "directory",
+              "children": []
+            },
+            {
+              "name": "vscode-setup",
+              "type": "directory",
+              "children": []
+            }
+          ]
+        },
+        {
+          "name": "include",
+          "type": "directory",
+          "children": [
+            {
+              "name": "sbuf.h",
+              "type": "file",
+              "children": []
+            },
+            {
+              "name": "sockhelper.h",
+              "type": "file",
+              "children": []
+            }
+          ]
+        },
+        {
+          "name": "REMOTE_ACCESS.md",
+          "type": "file",
+          "children": []
+        }
+      ]
+    },
+    {
+      "name": "homepage",
+      "type": "directory",
+      "children": [
+        {
+          "name": "compose.yml",
+          "type": "file",
+          "children": []
+        },
+        {
+          "name": "dockerfile",
+          "type": "file",
+          "children": []
+        },
+        {
+          "name": "eslint.config.js",
+          "type": "file",
+          "children": []
+        },
+        {
+          "name": "index.html",
+          "type": "file",
+          "children": []
+        },
+        {
+          "name": "node_modules",
+          "type": "directory",
+          "children": [
+            {
+              "name": "[365 entries exceeds filelimit, not opening dir]",
+              "type": "file",
+              "children": []
+            }
+          ]
+        },
+        {
+          "name": "package.json",
+          "type": "file",
+          "children": []
+        },
+        {
+          "name": "package-lock.json",
+          "type": "file",
+          "children": []
+        },
+        {
+          "name": "public",
+          "type": "directory",
+          "children": [
+            {
+              "name": "vite.svg",
+              "type": "file",
+              "children": []
+            }
+          ]
+        },
+        {
+          "name": "README.md",
+          "type": "file",
+          "children": []
+        },
+        {
+          "name": "src",
+          "type": "directory",
+          "children": [
+            {
+              "name": "App.tsx",
+              "type": "file",
+              "children": []
+            },
+            {
+              "name": "assets",
+              "type": "directory",
+              "children": []
+            },
+            {
+              "name": "components",
+              "type": "directory",
+              "children": []
+            },
+            {
+              "name": "main.tsx",
+              "type": "file",
+              "children": []
+            },
+            {
+              "name": "pages",
+              "type": "directory",
+              "children": []
+            },
+            {
+              "name": "tailwind.css",
+              "type": "file",
+              "children": []
+            },
+            {
+              "name": "types",
+              "type": "directory",
+              "children": []
+            },
+            {
+              "name": "typography.js",
+              "type": "file",
+              "children": []
+            }
+          ]
+        },
+        {
+          "name": "test-index.html",
+          "type": "file",
+          "children": []
+        },
+        {
+          "name": "tsconfig.json",
+          "type": "file",
+          "children": []
+        },
+        {
+          "name": "vite.config.js",
+          "type": "file",
+          "children": []
+        }
+      ]
+    },
+    {
+      "name": "tweeter",
+      "type": "directory",
+      "children": [
+        {
+          "name": "milestone-2a.md",
+          "type": "file",
+          "children": []
+        },
+        {
+          "name": "node_modules",
+          "type": "directory",
+          "children": [
+            {
+              "name": "[460 entries exceeds filelimit, not opening dir]",
+              "type": "file",
+              "children": []
+            }
+          ]
+        },
+        {
+          "name": "package.json",
+          "type": "file",
+          "children": []
+        },
+        {
+          "name": "package-lock.json",
+          "type": "file",
+          "children": []
+        },
+        {
+          "name": "PLAN.md",
+          "type": "file",
+          "children": []
+        },
+        {
+          "name": "PostStatusSequenceDiagram.svg",
+          "type": "file",
+          "children": []
+        },
+        {
+          "name": "PostStatusSequenceDiagram.txt",
+          "type": "file",
+          "children": []
+        },
+        {
+          "name": "README.md",
+          "type": "file",
+          "children": []
+        },
+        {
+          "name": "SampleScreenshot.png",
+          "type": "file",
+          "children": []
+        },
+        {
+          "name": "tweeter.code-workspace",
+          "type": "file",
+          "children": []
+        },
+        {
+          "name": "tweeter-helper",
+          "type": "directory",
+          "children": [
+            {
+              "name": "main.py",
+              "type": "file",
+              "children": []
+            }
+          ]
+        },
+        {
+          "name": "tweeter-server",
+          "type": "directory",
+          "children": [
+            {
+              "name": "dist",
+              "type": "directory",
+              "children": []
+            },
+            {
+              "name": "layer",
+              "type": "directory",
+              "children": []
+            },
+            {
+              "name": "node_modules",
+              "type": "directory",
+              "children": []
+            },
+            {
+              "name": "package.json",
+              "type": "file",
+              "children": []
+            },
+            {
+              "name": "package-lock.json",
+              "type": "file",
+              "children": []
+            },
+            {
+              "name": "pushOnlyServer.sh",
+              "type": "file",
+              "children": []
+            },
+            {
+              "name": "samconfig.toml",
+              "type": "file",
+              "children": []
+            },
+            {
+              "name": "src",
+              "type": "directory",
+              "children": []
+            },
+            {
+              "name": "template.yml",
+              "type": "file",
+              "children": []
+            },
+            {
+              "name": "test",
+              "type": "directory",
+              "children": []
+            },
+            {
+              "name": "tsconfig.json",
+              "type": "file",
+              "children": []
+            },
+            {
+              "name": "updatedSharedPushServer.sh",
+              "type": "file",
+              "children": []
+            }
+          ]
+        },
+        {
+          "name": "tweeter-shared",
+          "type": "directory",
+          "children": [
+            {
+              "name": "dist",
+              "type": "directory",
+              "children": []
+            },
+            {
+              "name": "package.json",
+              "type": "file",
+              "children": []
+            },
+            {
+              "name": "src",
+              "type": "directory",
+              "children": []
+            },
+            {
+              "name": "tsconfig.json",
+              "type": "file",
+              "children": []
+            },
+            {
+              "name": "vite.config.ts",
+              "type": "file",
+              "children": []
+            }
+          ]
+        },
+        {
+          "name": "tweeter-web",
+          "type": "directory",
+          "children": [
+            {
+              "name": "babel.config.js",
+              "type": "file",
+              "children": []
+            },
+            {
+              "name": "dist",
+              "type": "directory",
+              "children": []
+            },
+            {
+              "name": "index.html",
+              "type": "file",
+              "children": []
+            },
+            {
+              "name": "jest.setup.js",
+              "type": "file",
+              "children": []
+            },
+            {
+              "name": "node_modules",
+              "type": "directory",
+              "children": []
+            },
+            {
+              "name": "package.json",
+              "type": "file",
+              "children": []
+            },
+            {
+              "name": "public",
+              "type": "directory",
+              "children": []
+            },
+            {
+              "name": "src",
+              "type": "directory",
+              "children": []
+            },
+            {
+              "name": "test",
+              "type": "directory",
+              "children": []
+            },
+            {
+              "name": "tsconfig.json",
+              "type": "file",
+              "children": []
+            },
+            {
+              "name": "vite.config.ts",
+              "type": "file",
+              "children": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "tweeter",
+      "type": "directory",
+      "children": [
+        {
+          "name": "milestone-2a.md",
+          "type": "file",
+          "children": []
+        },
+        {
+          "name": "node_modules",
+          "type": "directory",
+          "children": [
+            {
+              "name": "[460 entries exceeds filelimit, not opening dir]",
+              "type": "file",
+              "children": []
+            }
+          ]
+        },
+        {
+          "name": "package.json",
+          "type": "file",
+          "children": []
+        },
+        {
+          "name": "package-lock.json",
+          "type": "file",
+          "children": []
+        },
+        {
+          "name": "PLAN.md",
+          "type": "file",
+          "children": []
+        },
+        {
+          "name": "PostStatusSequenceDiagram.svg",
+          "type": "file",
+          "children": []
+        },
+        {
+          "name": "PostStatusSequenceDiagram.txt",
+          "type": "file",
+          "children": []
+        },
+        {
+          "name": "README.md",
+          "type": "file",
+          "children": []
+        },
+        {
+          "name": "SampleScreenshot.png",
+          "type": "file",
+          "children": []
+        },
+        {
+          "name": "tweeter.code-workspace",
+          "type": "file",
+          "children": []
+        },
+        {
+          "name": "tweeter-helper",
+          "type": "directory",
+          "children": [
+            {
+              "name": "main.py",
+              "type": "file",
+              "children": []
+            }
+          ]
+        },
+        {
+          "name": "tweeter-server",
+          "type": "directory",
+          "children": [
+            {
+              "name": "dist",
+              "type": "directory",
+              "children": []
+            },
+            {
+              "name": "layer",
+              "type": "directory",
+              "children": []
+            },
+            {
+              "name": "node_modules",
+              "type": "directory",
+              "children": []
+            },
+            {
+              "name": "package.json",
+              "type": "file",
+              "children": []
+            },
+            {
+              "name": "package-lock.json",
+              "type": "file",
+              "children": []
+            },
+            {
+              "name": "pushOnlyServer.sh",
+              "type": "file",
+              "children": []
+            },
+            {
+              "name": "samconfig.toml",
+              "type": "file",
+              "children": []
+            },
+            {
+              "name": "src",
+              "type": "directory",
+              "children": []
+            },
+            {
+              "name": "template.yml",
+              "type": "file",
+              "children": []
+            },
+            {
+              "name": "test",
+              "type": "directory",
+              "children": []
+            },
+            {
+              "name": "tsconfig.json",
+              "type": "file",
+              "children": []
+            },
+            {
+              "name": "updatedSharedPushServer.sh",
+              "type": "file",
+              "children": []
+            }
+          ]
+        },
+        {
+          "name": "tweeter-shared",
+          "type": "directory",
+          "children": [
+            {
+              "name": "dist",
+              "type": "directory",
+              "children": []
+            },
+            {
+              "name": "package.json",
+              "type": "file",
+              "children": []
+            },
+            {
+              "name": "src",
+              "type": "directory",
+              "children": []
+            },
+            {
+              "name": "tsconfig.json",
+              "type": "file",
+              "children": []
+            },
+            {
+              "name": "vite.config.ts",
+              "type": "file",
+              "children": []
+            }
+          ]
+        },
+        {
+          "name": "tweeter-web",
+          "type": "directory",
+          "children": [
+            {
+              "name": "babel.config.js",
+              "type": "file",
+              "children": []
+            },
+            {
+              "name": "dist",
+              "type": "directory",
+              "children": []
+            },
+            {
+              "name": "index.html",
+              "type": "file",
+              "children": []
+            },
+            {
+              "name": "jest.setup.js",
+              "type": "file",
+              "children": []
+            },
+            {
+              "name": "node_modules",
+              "type": "directory",
+              "children": []
+            },
+            {
+              "name": "package.json",
+              "type": "file",
+              "children": []
+            },
+            {
+              "name": "public",
+              "type": "directory",
+              "children": []
+            },
+            {
+              "name": "src",
+              "type": "directory",
+              "children": []
+            },
+            {
+              "name": "test",
+              "type": "directory",
+              "children": []
+            },
+            {
+              "name": "tsconfig.json",
+              "type": "file",
+              "children": []
+            },
+            {
+              "name": "vite.config.ts",
+              "type": "file",
+              "children": []
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

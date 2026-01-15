@@ -1,0 +1,37 @@
+For my creative project related to Isaiah, I decided to make a book cover, as if Isaiah
+was printed as a standalone book of scripture. I had a really cool vision in my head for how I
+wanted to make it, but I am not a good artist at all. Thus, I had the idea of going through the
+process of setting up a completely local set of image models, and then run everything on my
+home computer using ComfyUI. This is a set of completely local (not internet connected), open
+source, machine learning image models that generate images through a text prompt and a
+starting image.
+Starting out, I took my inspiration from seeing another classmate’s really cool project
+where he did a pen drawing of a mountain landscape, and I wanted to do a different take on
+the idea of a landscape with a bunch of tall mountains. I first went into a digital drawing
+program, Krita, and drew out my ideas, going through 3 (very crude) iterations, trying each out
+as starting images in the image generation software:After making the image in the drawing program, I fed it into a workflow that I designed
+for using that image as a template for creating a much better and more realistic looking image.
+That workflow takes both the image and 2 prompts, one prompt with positive keywords and the
+other with negative keywords. This then uses a machine learning model that I downloaded to
+be able to put that all together according to the KSampler node, which has settings like how
+many times to feed the generated picture through the model in a loop, how similar to make the
+resulting picture to the original image, and other things like that. It took quite a bit of tinkering
+with over 100 different images generated (I left it going overnight after I spent a few hours
+dialing in the settings). This image is the workflow that I used, along with an example output
+image:
+After getting the main image that I was going to use, I fed it into a pre-made workflow to
+be able to add text in a font that I wanted over the top to make it look like a book or a movie
+cover. I then used an image manipulation tool by Google to be able to cut out the person at thebottom to be able to make it only the natural landscape, broken by a heavenly beam, and
+added that modified section onto my final image. The final workflow is shown below:
+The processes described in the “Tools for Scripture Study” handout were useful in the
+formulation and execution of this project. As I went back and was pondering on Isaiah 2, I was
+considering how Isaiah might have felt as he was receiving revelation from God. I was also
+considering how Isaiah prophesied about the mountain of the Lord’s house, and how it will be
+the highest and most important place in all the earth. This reminded me of how the mountain
+itself is often used as a symbol for the temple, as the closest one can get to God here on earth.
+Thinking about this scripture in context, I was struck with two of the most amazing
+images of receiving revelation that we have recorded, Moses talking with God in the burning
+bush, and Joseph Smith’s first vision. Isaiah had some of the most important revelations for ustoday about the first and second coming of Christ, and I wanted to represent the revelation
+given to Isaiah with a mix of the grandeur of the method of revelation by the other two
+prophets. I wanted to make something that represented Isaiah and how important his
+prophecies were to both the ancient Israelites as well as the modern followers of Christ today.

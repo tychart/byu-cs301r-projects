@@ -1,0 +1,220 @@
+{
+  "byu-cs301r-projects": {
+    "__pycache__": {
+      "usage.cpython-313.pyc": "usage.cpython-313.pyc"
+    },
+    "request.py": "request.py",
+    "requirements.txt": "requirements.txt",
+    "test_nospace.txt": "test_nospace.txt",
+    "test_onlyalpahanum.txt": "test_onlyalpahanum.txt",
+    "test.txt": "test.txt",
+    "tmp.json": "tmp.json",
+    "usage.py": "usage.py"
+  },
+  "byu-cs324-projects": {
+    "01a-hw-private-repo-mirror": {
+      "README.md": "README.md"
+    },
+    "01b-hw-manhunt": {
+      "README.md": "README.md"
+    },
+    "01c-hw-strings-io-env": {
+      "exercises": {
+        "exercises.c": "exercises.c",
+        "README.md": "README.md",
+        "test.txt": "test.txt"
+      }
+    },
+    "02-hw-byu-bandit": {
+      "README.md": "README.md",
+      "SshTester.py": "SshTester.py"
+    },
+    "03a-hw-remote": {
+      "hello.c": "hello.c",
+      "README.md": "README.md"
+    },
+    "03b-hw-fork-exec": {
+      "exec.c": "exec.c",
+      "fork.c": "fork.c",
+      "Makefile": "Makefile",
+      "README.md": "README.md"
+    },
+    "03b-hw-mem-strings": {
+      "README.md": "README.md"
+    },
+    "03c-hw-fork-exec": {
+      "exec.c": "exec.c",
+      "fork.c": "fork.c",
+      "Makefile": "Makefile",
+      "README.md": "README.md"
+    },
+    "04-lab-shell-pipeline": {
+      "checktsh.pl": "checktsh.pl",
+      "Makefile": "Makefile",
+      "mycat.c": "mycat.c",
+      "mygrep.c": "mygrep.c",
+      "myintgroup.c": "myintgroup.c",
+      "myppid.c": "myppid.c",
+      "myspin.c": "myspin.c",
+      "pipeline-2cmds.png": "pipeline-2cmds.png",
+      "pipeline-2cmds.svg": "pipeline-2cmds.svg",
+      "pipeline.png": "pipeline.png",
+      "pipeline.svg": "pipeline.svg",
+      "README.md": "README.md",
+      "redirection.png": "redirection.png",
+      "redirection.svg": "redirection.svg",
+      "sdriver.pl": "sdriver.pl",
+      "trace01.txt": "trace01.txt",
+      "trace02.txt": "trace02.txt",
+      "trace03.txt": "trace03.txt",
+      "trace34.txt": "trace34.txt",
+      "trace35.txt": "trace35.txt",
+      "trace36.txt": "trace36.txt",
+      "trace37.txt": "trace37.txt",
+      "trace38.txt": "trace38.txt",
+      "trace39.txt": "trace39.txt",
+      "trace40.txt": "trace40.txt",
+      "trace41.txt": "trace41.txt",
+      "trace42.txt": "trace42.txt",
+      "tsh.c": "tsh.c",
+      "tshref": "tshref"
+    },
+    "05-hw-signals": {
+      "driver.py": "driver.py",
+      "killer.c": "killer.c",
+      "Makefile": "Makefile",
+      "README.md": "README.md",
+      "signals.c": "signals.c"
+    },
+    "06-lab-shell-signals": {
+      "checktsh.pl": "checktsh.pl",
+      "Makefile": "Makefile",
+      "myint.c": "myint.c",
+      "myspin.c": "myspin.c",
+      "mysplit.c": "mysplit.c",
+      "mystop.c": "mystop.c",
+      "README.md": "README.md",
+      "sdriver.pl": "sdriver.pl",
+      "trace01.txt": "trace01.txt",
+      "trace02.txt": "trace02.txt",
+      "trace03.txt": "trace03.txt",
+      "trace04.txt": "trace04.txt",
+      "trace05.txt": "trace05.txt",
+      "trace06.txt": "trace06.txt",
+      "trace07.txt": "trace07.txt",
+      "trace08.txt": "trace08.txt",
+      "trace09.txt": "trace09.txt",
+      "trace10.txt": "trace10.txt",
+      "trace11.txt": "trace11.txt",
+      "trace12.txt": "trace12.txt",
+      "trace13.txt": "trace13.txt",
+      "trace14.txt": "trace14.txt",
+      "trace15.txt": "trace15.txt",
+      "trace16.txt": "trace16.txt",
+      "tsh.c": "tsh.c",
+      "tshref": "tshref"
+    },
+    "07-hw-sockets": {
+      "alpha.txt": "alpha.txt",
+      "client.c": "client.c",
+      "http-bestill.txt": "http-bestill.txt",
+      "http-socket.txt": "http-socket.txt",
+      "Makefile": "Makefile",
+      "README.md": "README.md",
+      "server.c": "server.c",
+      "strip_http.py": "strip_http.py"
+    },
+    "08-lab-socket-hunt": {
+      "driver.py": "driver.py",
+      "Makefile": "Makefile",
+      "README.md": "README.md",
+      "server_status.py": "server_status.py",
+      "treasure_hunter.c": "treasure_hunter.c",
+      "treasure_hunt.png": "treasure_hunt.png",
+      "treasure_hunt.svg": "treasure_hunt.svg"
+    },
+    "09a-hw-http": {
+      "README.md": "README.md",
+      "www": "www"
+    },
+    "09b-hw-concurrency": {
+      "echo.c": "echo.c",
+      "echo_cnt.c": "echo_cnt.c",
+      "echoserveri.c": "echoserveri.c",
+      "echoserverp.c": "echoserverp.c",
+      "echoservert.c": "echoservert.c",
+      "Makefile": "Makefile",
+      "samconfig.toml": "samconfig.toml",
+      "src": "src",
+      "template.yml": "template.yml",
+      "test": "test",
+      "tsconfig.json": "tsconfig.json",
+      "updatedSharedPushServer.sh": "updatedSharedPushServer.sh"
+    },
+    "09c-shared-push-server": {
+      "dist": "dist",
+      "layer": "layer",
+      "node_modules": "node_modules",
+      "package.json": "package.json",
+      "pushOnlyServer.sh": "pushOnlyServer.sh",
+      "package-lock.json": "package-lock.json",
+      "src": "src",
+      "template.yml": "template.yml",
+      "test": "test",
+      "tsconfig.json": "tsconfig.json"
+    },
+    "tweeter-shared": {
+      "dist": "dist",
+      "package.json": "package.json",
+      "src": "src",
+      "tsconfig.json": "tsconfig.json",
+      "vite.config.ts": "vite.config.ts"
+    },
+    "tweeter-web": {
+      "babel.config.js": "babel.config.js",
+      "dist": "dist",
+      "index.html": "index.html",
+      "jest.setup.js": "jest.setup.js",
+      "node_modules": "node_modules",
+      "package.json": "package.json",
+      "public": "public",
+      "src": "src",
+      "test": "test",
+      "tsconfig.json": "tsconfig.json",
+      "vite.config.ts": "vite.config.ts"
+    }
+  },
+  "homepage": {
+    "babel.config.js": "babel.config.js",
+    "dist": "dist",
+    "index.html": "index.html",
+    "jest.setup.js": "jest.setup.js",
+    "node_modules": "node_modules",
+    "package.json": "package.json",
+    "public": "public",
+    "src": "src",
+    "test": "test",
+    "tsconfig.json": "tsconfig.json",
+    "vite.config.ts": "vite.config.ts"
+  },
+  "tweeter-server": {
+    "dist": "dist",
+    "layer": "layer",
+    "node_modules": "node_modules",
+    "package.json": "package.json",
+    "pushOnlyServer.sh": "pushOnlyServer.sh",
+    "samconfig.toml": "samconfig.toml",
+    "src": "src",
+    "template.yml": "template.yml",
+    "test": "test",
+    "tsconfig.json": "tsconfig.json",
+    "updatedSharedPushServer.sh": "updatedSharedPushServer.sh"
+  },
+  "tweeter-shared": {
+    "dist": "dist",
+    "package.json": "package.json",
+    "src": "src",
+    "tsconfig.json": "tsconfig.json",
+    "vite.config.ts": "vite.config.ts"
+  }
+}
