@@ -32,9 +32,22 @@ def _aggregate_usage(usages):
     total = {'input': 0, 'cached': 0, 'output': 0, 'reasoning': 0}
     for usage in usages:
         total['input'] += usage.input_tokens
-        total['cached'] += usage.input_tokens_details.cached_tokens
+        
+        try:
+            total['cached'] += usage.input_tokens_details.cached_tokens
+        except:
+            print('No cached tokens were found for this query')
+
+        
         total['output'] += usage.output_tokens
-        total['reasoning'] += usage.output_tokens_details.reasoning_tokens
+
+
+        try:
+            total['reasoning'] += usage.output_tokens_details.reasoning_tokens
+        except:
+            print('No reasoning tokens were found for this query')
+    
+    
     return total
 
 

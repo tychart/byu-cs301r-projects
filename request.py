@@ -7,7 +7,6 @@ from usage import print_usage
 
 def openai_client():
     load_dotenv()
-    print(f"Key: {os.getenv('OPENAI_APIKEY')}")
     return Client(api_key=os.getenv('OPENAI_APIKEY'))
     
 def ollama_client():
@@ -17,22 +16,44 @@ def ollama_client():
     )
 
 def main():
-    modelenv = 3
-    # client = openai_client()
-    client = ollama_client()
     start = time()
-    # model = "gpt-5-nano"
-    model = "gemma3:4b"
+
+    modelnum = 2
+
+    match modelnum:
+        case 1:
+            model = "gpt-5-nano"
+        case 2:
+            model = "gemma3:4b"
+        case 3:
+            model = "gpt-oss"
+
+    if "gpt" in model and model != "gpt-oss":
+        client = openai_client()
+    else:
+        client = ollama_client()
+
+
+
+    
     
     response = client.responses.create(
         model=model,
-        input="Hi.",
-        # reasoning={'effort': 'low'}
+        input="Given the following list, can you please classify the following cities by if they are over or under 100,000 people?\n\nList: ['New York', 'Los Angeles', 'Chicago', 'Houston', 'Phoenix', 'Philadelphia', 'San Antonio', 'San Diego', 'Dallas', 'San Jose']\n\nOutput: Over 100,",
+        reasoning={'effort': 'low'}
     )
+
+    # print(f"Full Response: {response}")
+
+    print("-------------------------------------------")
+    print("Response:")
+    print(response.output_text)
+    print("-------------------------------------------")
+
 
     print(f'Took {round(time() - start, 2)} seconds')
     print_usage(model, response.usage)
-    print(response.output_text)
+    
 
 
 if __name__ == '__main__':
