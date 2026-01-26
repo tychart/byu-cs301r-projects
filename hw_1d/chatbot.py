@@ -69,7 +69,7 @@ async def _main_console(agent):
         print('Agent:', response)
 
 
-def _main_gradio(agent):
+def _main_gradio(agent, share: bool):
     # Constrain width with CSS and center
     css = """
     /* limit overall Gradio app width and center it */
@@ -106,13 +106,13 @@ def _main_gradio(agent):
             with gr.Column(scale=1):
                 usage_view.render()
 
-    demo.launch()
+    demo.launch(share=share)
 
 
-def main(prompt_path: Path, model: str, use_web: bool):
+def main(prompt_path: Path, model: str, use_web: bool, share: bool):
     with ChatAgent(model, prompt_path.read_text() if prompt_path else '') as agent:
         if use_web:
-            _main_gradio(agent)
+            _main_gradio(agent, share)
         else:
             asyncio.run(_main_console(agent))
 
@@ -123,5 +123,6 @@ if __name__ == "__main__":
     parser.add_argument('prompt_file', nargs='?', type=Path, default=None)
     parser.add_argument('--web', action='store_true')
     parser.add_argument('--model', default='gpt-5-nano')
+    parser.add_argument('--share', action='store_true')
     args = parser.parse_args()
-    main(args.prompt_file, args.model, args.web)
+    main(args.prompt_file, args.model, args.web, args.share)
