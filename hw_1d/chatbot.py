@@ -52,6 +52,13 @@ class ChatAgent:
         )
         return response.output_text
 
+    def reset(self):
+        # Reset conversation back to just the system prompt
+        self._history = []
+        if self._prompt:
+            self._history.append({'role': 'system', 'content': self._prompt})
+        self.usage = []
+
     def __enter__(self):
         return self
 
@@ -90,21 +97,36 @@ def _main_gradio(agent, share: bool):
             usage_content = format_usage_markdown(agent.model, agent.usage)
             return response, usage_content
 
+        
+        def do_reset():
+            agent.reset()
+            # Clear chatbot UI + reset usage panel
+            return [], format_usage_markdown(agent.model, [])
+
         with gr.Row():
             with gr.Column(scale=5):
+                with gr.Row():
+                    reset_btn = gr.Button("Reset conversation")
+
                 bot = gr.Chatbot(
-                    label=' ',
+                    label=" ",
                     height=600,
                     resizable=True,
                 )
                 chat = gr.ChatInterface(
                     chatbot=bot,
                     fn=get_response,
-                    additional_outputs=[usage_view]
+                    additional_outputs=[usage_view],
+                )
+
+                reset_btn.click(
+                    fn=do_reset,
+                    outputs=[bot, usage_view],
                 )
 
             with gr.Column(scale=1):
                 usage_view.render()
+
 
     demo.launch(share=share)
 
