@@ -91,7 +91,7 @@ def _main_gradio(agent, share: bool):
 
     usage_view = gr.Markdown(format_usage_markdown(agent.model, []))
 
-    with gr.Blocks(css=css, theme=gr.themes.Monochrome()) as demo:
+    with gr.Blocks(css=css, theme=gr.themes.Monochrome()) as demo: # type: ignore
         async def get_response(message, chat_view_history):
             response = await agent.get_response(message)
             usage_content = format_usage_markdown(agent.model, agent.usage)
