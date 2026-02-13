@@ -7,7 +7,7 @@ from usage import print_usage
 
 def openai_client():
     load_dotenv()
-    return Client(api_key=os.getenv('OPENAI_APIKEY'))
+    return Client(api_key=os.getenv('OPENAI_API_KEY'))
     
 def ollama_client():
     return Client(

@@ -11,7 +11,7 @@ from chonkie import TokenChunker
 
 def openai_client():
     load_dotenv()
-    return openai.AsyncOpenAI(api_key=os.getenv('OPENAI_APIKEY'))
+    return openai.AsyncOpenAI(api_key=os.getenv('OPENAI_API_KEY'))
     
 def ollama_client():
     return openai.AsyncOpenAI(

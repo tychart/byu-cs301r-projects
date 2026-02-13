@@ -18,7 +18,7 @@ from shared.usage import print_usage, format_usage_markdown
 
 # def openai_client():
 #     load_dotenv()
-#     return Client(api_key=os.getenv('OPENAI_APIKEY'))
+#     return Client(api_key=os.getenv('OPENAI_API_KEY'))
     
 # def ollama_client():
 #     return Client(
@@ -29,7 +29,7 @@ from shared.usage import print_usage, format_usage_markdown
 class ChatAgent:
     def __init__(self, model: str, prompt: str):
         load_dotenv()
-        self._ai = AsyncOpenAI(api_key=os.getenv('OPENAI_APIKEY'))
+        self._ai = AsyncOpenAI(api_key=os.getenv('OPENAI_API_KEY'))
         self.usage = []
         self.model = model
         self.reasoning = {'effort': 'low'}
