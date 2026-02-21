@@ -1,0 +1,5 @@
+For my 3 hours, I got the web_search tool to work, used the provided exec_python function, and tried to get docker execution to work. I got to test out the model choosing to use python to generate a response and saw where about the difficulty of the problem had to be in order to get the system to work.
+
+For about 2 of the 3 total hours, I tried to get the docker execution to work. I spent the time dealing with permission issues, changing the uid and gid of the container user and of the files that I had. I also spent a lot of time trying and failing to understand exactly how the docker execution system worked. Some instructions / documentation about how to do more complex stuff that is baked into the starter code but disabled by default would be nice. (Most of my time was spent barking up the wrong tree by testing and modifying the run.sh script)
+
+Some things I learned was that using the more open tool calls like web search or code generation uses way more input and output tokens compared to dedicated specialized tools. Of course the flexibility could totally be worth it, it just makes sense to consider the requirements of the particular application.

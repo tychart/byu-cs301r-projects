@@ -1,0 +1,23 @@
+#!/bin/sh
+
+# Create container (do not start yet)
+docker create --name llm-exec \
+  --network none \
+  --cpus="0.5" \
+  --memory="256m" \
+  --pids-limit=50 \
+  --read-only \
+  --tmpfs /tmp:rw,nosuid,nodev,mode=1777 \
+  --cap-drop ALL \
+  --user 1000:1000 \
+  --security-opt no-new-privileges:true \
+  safe-container:latest /workspace/task.py --timeout 10
+
+# Copy file into writable tmpfs
+docker cp ./task.py llm-exec:/workspace/task.py
+
+# Start container and attach
+docker start -a llm-exec
+
+# Cleanup
+docker rm llm-exec
