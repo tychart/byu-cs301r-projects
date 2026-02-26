@@ -7,7 +7,6 @@ import io
 import json
 import sys
 from pathlib import Path
-from typing import List, Any, Dict
 
 import gradio as gr
 from openai import AsyncOpenAI
@@ -92,10 +91,10 @@ class ChatAgent:
         if prompt:
             self._history.append({'role': 'system', 'content': prompt})
 
-        self.tools: List[FunctionToolParam] = list(our_tools.tools)
+        self.tools: list[FunctionToolParam] = list(our_tools.tools)
 
         searchtool: FunctionToolParam = {"type": "web_search"}         # pyright: ignore[reportAssignmentType]
-        builtin_tools: List[FunctionToolParam] = [searchtool]        
+        builtin_tools: list[FunctionToolParam] = [searchtool]        
         self.tools += builtin_tools
 
 

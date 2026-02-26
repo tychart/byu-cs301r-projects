@@ -8,14 +8,26 @@ import json
 import os
 import sys
 from pathlib import Path
+# from typing import List, Any, Dict
+from typing import cast
+
 
 import gradio as gr
 from openai import AsyncOpenAI
+from openai.types.shared_params.reasoning import Reasoning
+from openai.types.responses import FunctionToolParam
+
+
 
 from tools import ToolBox
 from usage import print_usage, format_usage_markdown
 
+from dotenv import load_dotenv
+
+
 our_tools = ToolBox()
+
+load_dotenv()
 
 
 class ChatAgent:
@@ -23,11 +35,16 @@ class ChatAgent:
         self._ai = AsyncOpenAI()
         self.model = model
         self.show_reasoning = show_reasoning
-        self.reasoning = {}
+        self.reasoning: Reasoning = {}
         if show_reasoning:
             self.reasoning['summary'] = 'auto'
         if 'gpt-5' in self.model and reasoning_effort:
-            self.reasoning['effort'] = reasoning_effort
+            match reasoning_effort:
+                case "none" | "minimal" | "low" | "medium" | "high" | "xhigh":
+                    self.reasoning["effort"] = reasoning_effort
+                case _:
+                    raise ValueError(f"Invalid reasoning effort: {reasoning_effort}")
+
 
         self.usage = []
         self.usage_markdown = format_usage_markdown(self.model, [])
@@ -37,6 +54,40 @@ class ChatAgent:
         if prompt:
             self._history.append({'role': 'system', 'content': prompt})
 
+        self.tools: list[FunctionToolParam] = list(our_tools.tools)
+
+        searchtool: FunctionToolParam = cast(FunctionToolParam, {
+            "type": "web_search"
+        })    
+        
+        builtin_tools: list[FunctionToolParam] = []
+        mcps: list[FunctionToolParam] = []
+
+        google_mcp: FunctionToolParam = cast(FunctionToolParam, {
+            "type": "mcp",
+            "server_label": "google-mcp",
+            "server_url": 'https://mapstools.googleapis.com/mcp',
+            "require_approval": "never",
+            "headers": {
+                "X-Goog-Api-Key": os.getenv('GOOGLE_API_KEY'),
+            },
+        })
+
+        fetch_mcp: FunctionToolParam = cast(FunctionToolParam, {
+            "type": "mcp",
+            "server_label": "fetch-mcp",
+            "server_url": "https://remote.mcpservers.org/fetch/mcp",
+            "require_approval": "never"
+        })
+
+        # builtin_tools.append(searchtool)
+
+        # mcps.append(google_mcp)
+        mcps.append(fetch_mcp)
+        
+        self.tools.extend(builtin_tools)
+        self.tools.extend(mcps)
+
     async def get_response(self, user_message: str):
         self._history.append({'role': 'user', 'content': user_message})
 
@@ -45,17 +96,7 @@ class ChatAgent:
                 input=self._history,
                 model=self.model,
                 reasoning=self.reasoning,
-                tools=our_tools.tools + [
-                    {
-                        "type": "mcp",
-                        "server_label": "google-mcp",
-                        "server_url": 'https://mapstools.googleapis.com/mcp',
-                        "require_approval": "never",
-                        "headers": {
-                            "X-Goog-Api-Key": os.getenv('GOOGLE_API_KEY'),
-                        },
-                    }
-                ]
+                tools=self.tools
             )
 
             print('OUTPUT', response.output)
@@ -76,7 +117,7 @@ class ChatAgent:
 
                     func = our_tools.get_tool_function(item.name)
                     args = json.loads(item.arguments)
-                    result = func(**args)
+                    result = func(**args) # pyright: ignore[reportOptionalCall]
                     self._history.append({
                         'type': 'function_call_output',
                         'call_id': item.call_id,
@@ -86,7 +127,8 @@ class ChatAgent:
 
                 elif item.type == 'message':
                     for chunk in item.content:
-                        yield 'output', chunk.text
+                        if (chunk.type == 'output_text'):
+                            yield 'output', chunk.text
                     return
 
     def __enter__(self):
@@ -147,7 +189,7 @@ def _main_gradio(agent_args):
     reasoning_view = gr.Markdown('', elem_id='reasoning-md')
     usage_view = gr.Markdown('')
 
-    with gr.Blocks(css=css, theme=gr.themes.Monochrome()) as demo:
+    with gr.Blocks(css=css, theme=gr.themes.Monochrome()) as demo: # pyright: ignore[reportPrivateImportUsage]
         agent = gr.State()
 
         async def get_response(message, chat_view_history, agent):

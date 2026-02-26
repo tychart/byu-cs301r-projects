@@ -1,0 +1,5 @@
+I spent the first hour reading the 2 required articles, I thought it was super interesting how willing the LLMs were to resort to blackmail. Also I was wondering why some sort of argument like "self-defense" was not used by the LLM in the reasoning.
+
+I spent the rest of my time learning about mcp from watching videos and reading articles. I also fixed the provided code so that the type checking was all satisfied and the types all matched up. I used a test mcp server hosted by `mcpservers.org`, and that was super easy to set up.
+
+I learned about how mcp can be run locally, especially from docker. I also explored how to attach mcp tools from openwebui. I also learned how the formatting works for the types in the OpenAI api and how to make my code more clear going forward so that I can understand what is going on better.
