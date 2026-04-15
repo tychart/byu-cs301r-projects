@@ -23,7 +23,7 @@ prompt: |
 ---
 
 name: main
-model: gpt-5.4
+model: gpt-5.2
 tools:
   - get_lewis_quote
   - get_nelson_quote
