@@ -1,0 +1,19 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "hw-3e"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "myteam>=0.2.10",
+]
+
+[project.scripts]
+snake = "hw_3e.snake:main"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/hw_3e"]
